@@ -1,0 +1,315 @@
+/* @group general */
+
+#wrapper {
+	width:  99%;
+	margin: 0 auto;
+	font: 14px Arial, Verdana, Helvetica, sans-serif;
+}
+
+div, span, p, ul, li a {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* @end */
+
+/* @group header */
+
+#header {
+	
+}
+
+#logo {
+	border: 0;
+	background-image: url(images/logo.jpg);
+	width: 643px;
+	height: 133px;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#greeting-bar {
+	height: 27px;
+	background-color: #242e55;
+	color: #ffffff;
+	font: 10px/27px Verdana, Arial, Helvetica, sans-serif;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.right {
+	float: right;
+}
+
+#header p {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	float: right;
+	display: inline;
+	position: relative;
+	top: -100px;
+}
+
+#header input {
+	float: right;
+	margin-top: 10px;
+}
+
+/* @end */
+
+/* @group navbar */
+
+#navbar {
+	background-color: #242e55;
+	text-align: center;
+	height: 30px;
+}
+
+#menu {
+    float: left;
+    height: 2.5em;
+    overflow: visible;
+    list-style-type: none;
+    padding: 0;
+    left: 50%;
+    position: relative;
+}
+
+#menu li.menu_element {
+    float: none;
+    width: 130px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin: 0 2px 0 2px;
+    left: -50%;
+    top: 5px;
+/*  border-left: 1px solid #D7D8E1;
+    border-right: 1px solid #D7D8E1;
+    border-bottom: 1px solid #D7D8E1;*/
+}
+
+ul.dropdown_menu {
+    background-color: #242E55;
+    list-style: none;
+    position: absolute;
+    left: -99999px; /* Hide off-screen when not needed (this is more accessible than display:none) */
+    margin-top: 5px;
+    padding: 0px;
+}
+
+ul.dropdown_menu li {
+    float: left;
+    text-align: center;
+    width: 130px; 
+    height: 24px;
+    border-top: 1px solid #D7D8E1;
+}
+
+ul.dropdown_menu a {
+    white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+    color: #D7D8E1;
+    font-size: 12px;
+    font-family: Verdana,Helvetica,Arial,sans-serif;
+    line-height: 12px;
+    font-weight: bold;
+    vertical-align: center;
+    position: relative;
+    top: 5px;
+}
+
+.menu_element:hover ul {
+    left: 0px; /* Display the dropdown on hover */
+}
+
+ul.dropdown_menu li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    text-decoration: underline;
+}
+
+ul.dropdown_menu li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration: none;
+}
+
+ul.dropdown_menu li:hover ul li a:hover{ /* The most explicit hover states - what happens when you hover each individual link. */
+    color: #FFCC00;
+    font-size: 10px;
+    font-family: Verdana,Helvetica,Arial,sans-serif;
+    line-height: 12px;
+    font-weight: bold;
+}
+
+
+.menu_element a:link { /* A normal menu item */
+    color: #d7d8e1;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    /* manually added */
+    display: inline-block;
+    width: 130px; 
+    text-align: center;
+}
+
+.menu_element a:visited { /* A normal menu item */
+    color: #d7d8e1;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    /* manually added */
+    display: inline-block;
+    width: 130px; 
+    text-align: center;
+}
+
+.menu_element a:hover { 
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    /* manually added */
+    display: inline-block;
+    width: 130px; 
+    text-align: center;
+}
+/* @end */
+
+/* @group sidebars */
+
+#sidebar-left {
+	width: 160px;
+	background-color: #e1e2e5;
+	text-align: center;
+	float: left;
+	clear: left;
+
+}
+
+#sidebar-right {
+	width: 160px;
+	background-color: #e1e2e5;
+	text-align: center;
+	float: right;
+	clear: right;
+}
+
+.block {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font: bold 12px Arial, Verdana, Helvetica, sans-serif;
+}
+
+.block-line {
+	color:  black;
+	height:  2px;
+}
+
+.block a {
+	display: block;
+	font: 12px/18px Arial, Verdana, Helvetica, sans-serif;
+}
+
+.block-title {
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: block;
+	margin-bottom: 5px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.block span {
+	display: block;
+}
+
+/* @end */
+
+/* @group main */
+
+#main {
+
+}
+
+h1 {
+	text-align: center;
+	font: bold 18px Arial, Verdana, Helvetica, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font: bold 12px Arial, Verdana, Helvetica, sans-serif;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.storytext {
+	-moz-box-shadow: 0 0 8px #444444;
+	-webkit-box-shadow: 0 0 8px #444444;
+	box-shadow: 0 0 8px #444444;
+	width: 70%;
+	margin: 30px auto;
+	border: 4px double #c5c5c5;
+	padding: 5px;
+}
+
+.article-title {
+	font: bold 14px Arial, Verdana, Helvetica, sans-serif;
+	text-align: center;
+	display: block;
+	background-color: #e1e2e5;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 2px;
+}
+
+.article-details {
+	color: #909090;
+	font: 12px Arial, Verdana, Helvetica, sans-serif;
+	display: block;
+	margin-bottom: 50px;
+}
+
+.storytext p {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: inherit;
+}
+
+/* @end */
+
+/* @group footer */
+
+#footer {
+	font-size: 10px;
+	color: #ffffff;
+	background-color: #223355;
+	border-top: 2px solid #556688; 
+	border-bottom: 4px solid #556688;
+}
+
+#geeklog-text {
+	float: right;
+	text-align: right;
+	clear: right;
+}
+
+#footer a {
+	color: #ffffff;
+	padding-bottom: 10px;
+}
+
+/* @end */
